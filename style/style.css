@@ -105,6 +105,12 @@ background-color: #EAF1FB;
 margin-top: 2vw;
 }
 
+.main__leftbar div{
+display: flex;
+flex-direction: column;
+align-items: center;
+font-size: 13px;
+}
 
 .main__sidebar{
 width: 19%;
@@ -112,6 +118,11 @@ width: 19%;
 
 .main__sidebar-item{
 margin-top: 1vw;
+}
+
+.main__sidebar-item_inbox-text{
+display:flex;
+align-items:center;
 }
 
 .main__sidebar-item_inbox-text span{
@@ -126,21 +137,34 @@ border-radius: 9px;
 
 .main__sidebar-compose{
 width: 137px;
+display:flex;
+align-items:center;
+gap:10px;
 }
 
 .inbox,.stared,.snooz,.sent,.draft,.more{
 display:flex;
 align-items:center;
+margin-bottom: 10px;
 }
 
 .inbox{
 background-color: #cce6ff;
 width: 95%;
+height: 30px;
+border-radius: 13px;
 }
 
 .main__sidebar-item img{
  display:Inline-block;
 margin: 0 12px;
+}
+
+.main__sidebar-label{
+display:flex;
+justify-content:space-between;
+align-items:center;
+margin: 5px 13px;
 }
 
 .main__messageBox{
