@@ -1,0 +1,151 @@
+*{
+padding:0px;
+margin:0px;
+box-sizing:border-box;
+}
+
+body{
+font-family:arial;
+}
+.header,.header__searchbar-item1{
+display: flex;
+justify-content: space-between;
+}
+
+.header{
+margin-top: 10px;
+margin-left: 10px;
+}
+
+.header__left,.header__left-logo,.header__right,.header__account{
+display: flex;
+align-items: center;
+justify-content: space-between;
+}
+
+.header__left-logo{
+gap:10px;
+margin-left: 40px;
+}
+
+.header__left-logo .header__logo-text{
+font-size:22px;
+}
+
+.header__right .header__active_bar{
+display: flex;
+align-items: center;
+width: 101px;
+height: 48px;
+background-color: #EAF1FB;
+border-radius: 22px;
+justify-content: center;
+}
+
+.header__searchbar{
+width: 40%;
+height:45px;
+border-radius: 20px;
+display: flex;
+align-items: center;
+justify-content:space-between;
+padding: 0 15px;
+background-color: #EAF1FB;
+}
+
+.header__searchbar input {
+border:0;
+outline:none;
+width:100%;
+background-color: #EAF1FB;
+font-size:16px;
+}
+
+.header__account{
+width:134px;
+height:48px;
+border:1px solid #bfbfbf;
+border-radius:7px;
+}
+
+.header__account .header__account-name{
+background: purple;
+width: 20px;
+height: 20px;
+border-radius: 50%;
+text-align: center;
+color: white;
+}
+
+.header__right{
+padding-right:26px;
+gap:20px;
+}
+
+.header__menubuttons{
+display:flex;
+gap:20px;
+}
+
+.main{
+display:flex;
+}
+
+.main__leftbar{
+width:60px;
+height:100vw;
+display: flex;
+flex-direction: column;
+align-items: center;
+gap: 20px;
+background-color: #EAF1FB;
+}
+
+.main__leftbar .main__leftbar-mail{
+margin-top: 2vw;
+}
+
+
+.main__sidebar{
+width: 19%;
+}
+
+.main__sidebar-item{
+margin-top: 1vw;
+}
+
+.main__sidebar-item_inbox-text span{
+margin-left: 11vw;
+}
+
+.main__sidebar .main__sidebar-compose{
+padding: 13px;
+background-color: #C2E7FF;
+border-radius: 9px;
+}
+
+.main__sidebar-compose{
+width: 137px;
+}
+
+.inbox,.stared,.snooz,.sent,.draft,.more{
+display:flex;
+align-items:center;
+}
+
+.inbox{
+background-color: #cce6ff;
+width: 95%;
+}
+
+.main__sidebar-item img{
+ display:Inline-block;
+margin: 0 12px;
+}
+
+.main__messageBox{
+
+}
+.main__rightbar{
+
+}
