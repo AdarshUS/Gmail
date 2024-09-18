@@ -8,8 +8,10 @@
   </head>
   <body>
     <div class="header">
-      <div class="header__left">    
-        <img src="Assets/images/main-menu.png" width=24 alt="main_menu">
+      <div class="header__left">
+        <div class="header__left-menuicon">
+          <img src="Assets/images/main-menu.png" width=24 alt="main_menu">
+        </div>       
         <div class="header__left-logo">
           <img src="Assets/images/gmail.png" width=30 alt="gmaillogo">
           <div class="header__logo-text">
@@ -27,12 +29,14 @@
         </div>       
      </div>
      <div class="header__right">         
-       <div class="header__active_bar">
+       <div class="header__activebar">
          <img src="Assets/images/green circle.png" alt="active btn" width=14>
-         <div class="header__active_bar-text">
+         <div class="header__activebar-text">
            Active
          </div>
-             
+         <div class="header__activebar-drop">
+           <img src="Assets/images/down-arrow.png" alt="dropdown" width=12>
+         </div>             
        </div>
      <div class="header__menubuttons">
        <img src="Assets/images/question.png" width=20>
@@ -40,9 +44,9 @@
        <img src="Assets/images/show-apps-button.png" width=20>
      </div>
      <div class="header__account">
-       <img src="Assets/images/techversant_logo.png" width=80>
+       <img src="Assets/images/techversant_logo.png" width=85>
        <div class="header__account-name">
-          A
+          <span>A</span>
        </div>
      </div>
     </div>
@@ -68,30 +72,33 @@
          <span>Compose</span>
        </div>
        <div class="main__sidebar-item">
-         <div class="main__sidebar-item_1 inbox">
-           <img src="Assets/images/inbox.png" alt="inbox" width=20>
-           <div class="main__sidebar-item_inbox-text">
-             Inbox
-             <span>23</span>
+         <div class="main__sidebar-item1 inbox">
+           <img src="Assets/images/inbox.png" alt="inbox" width=15>
+           <div class="main__sidebar-item_inbox">
+             <div class="main__sidebar-item_inbox-text">Inbox</div>             
+             <div>23</div>
            </div>           
          </div>
-         <div class="main__sidebar-item_2 stared">
+         <div class="main__sidebar-item2 stared">
            <img src="Assets/images/star.png" alt="starred" width=20>
            <div class="">Starred</div>
          </div>
-         <div class="main__sidebar-item_3 snooz">
+         <div class="main__sidebar-item3 snooz">
            <img src="Assets/images/clock.png" alt="snoozed" width=20>
            <div class="">Snoozed</div>
          </div>
-         <div class="main__sidebar-item_4 sent">
+         <div class="main__sidebar-item4 sent">
            <img src="Assets/images/send.png" alt="sent" width=20>
            <div class="">Sent</div>
          </div>
-         <div class="main__sidebar-item_5 draft">
+         <div class="main__sidebar-item5 draft">
            <img src="Assets/images/draft.png" alt="drafts" width=20>
-           <div class="">Drafts</div>
+           <div class="main__sidebar-item5-draft">
+             <div class="main__sidebar-item5-draft-text">Draft</div>
+             <div class="main__sidebar-item5-draft-no">4</div>
+           </div>           
          </div>
-         <div class="main__sidebar-item_6 more">
+         <div class="main__sidebar-item6 more">
            <img src="Assets/images/down-arrow.png" alt="more" width=20>
            <div class="">More</div>
          </div>
@@ -100,10 +107,21 @@
          <div>Labels</div>
          <img src="Assets/images/plus.png" alt="add" width=18>
        </div>
-       <div class="compose">
-       </div>
      </div>
-     <div class="main__messageBox">
+     <div class="main__messageBoxContainer">
+       <div class="main_menubar">
+
+       </div>
+        <div class="main_messagebox"> 
+          <div class="main_messagebox-item1">
+            <img src="" alt="">
+            <img src="" alt="">
+            <img src="" alt="">
+          </div>
+          <div class="main_messagebox-item2">
+
+          </div>    
+       </div>
      </div>
      <div class="main__rightbar">
      </div>
