@@ -11,8 +11,7 @@ body {
 
 .header,
 .header__searchbar-item1 {
-  display: flex;
-  justify-content: space-between;
+  display: flex;  
 }
 
 .header__left-menuicon {
@@ -55,8 +54,8 @@ body {
 }
 
 .header__searchbar {
-  width: 40%;
-  height: 45px;
+  width: 43%;
+  height: 48px;
   border-radius: 20px;
   display: flex;
   align-items: center;
@@ -64,6 +63,7 @@ body {
   padding: 0 15px;
   background-color: #EAF1FB;
   margin-top: 6px;
+  margin-left: 114px;
 }
 
 .header__searchbar input {
@@ -98,6 +98,7 @@ body {
 .header__right {
   padding-right: 26px;
   gap: 20px;
+  margin-left: auto;
 }
 
 .header__menubuttons {
@@ -121,7 +122,8 @@ body {
 }
 
 .main__leftbar .main__leftbar-mail {
-  margin-top: 2vw;
+  margin-top: 23px;
+  width: 60px;
 }
 
 .main__leftbar div {
@@ -136,7 +138,7 @@ body {
 }
 
 .main__sidebar-item {
-  margin-top: 2.3vw;
+  margin-top: 24px;
 }
 
 
@@ -177,7 +179,7 @@ body {
 
 .inbox {
   background-color: #d3e3fd;
-  width: 95%;
+  width: 240px;
   height: 30px;
   border-radius: 13px;
 }
@@ -199,7 +201,7 @@ body {
 .main_menubar {
   display: flex;
   justify-content: space-between;
-  width: 73vw;
+  width: 76vw;
   background-color: #fff;
   height: 50px;
   align-items: center;
@@ -236,9 +238,7 @@ opacity:0.5;
 }
 
 .main__rightbar {
-  width: 40px;
-  position: absolute;
-  right: 0;
+  width: 55px; 
   margin-top: 11px;
 }
 
@@ -284,6 +284,10 @@ background-color:white;
   margin-left:auto;
 }
 
+.unread-msg{
+  background-color:#f2f5fc;
+}
+
 .highlight{
   font-weight:bolder;
 }
@@ -292,6 +296,30 @@ background-color:white;
   height: 7px;
   width: 14px;
   border-bottom: 1px solid #ccc;
+}
+
+@media (max-width:960px)
+{
+ .header__right .header__activebar{
+   width:50px;
+   height:50px;
+   border-radius:50%;
+}
+ .header__activebar-text{
+  display:none;
+}
+}
+
+@media (max-width:864px)
+{
+ .header__searchbar input,.search-option{
+   display:none;
+ }
+ .header__searchbar{
+ width:auto;
+ margin-left: 228px;
+ background: none;
+}
 }
 
 
