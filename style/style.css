@@ -1,0 +1,259 @@
+* {
+  padding: 0px;
+  margin: 0px;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: arial;
+  background-color: #f7f8fc;
+}
+
+.header,
+.header__searchbar-item1 {
+  display: flex;
+  justify-content: space-between;
+}
+
+.header__left-menuicon {
+  width: 60px;
+  background-color: #EAF1FB;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  height: 55px;
+}
+
+.header__left,
+.header__left-logo,
+.header__right,
+.header__account {
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+}
+
+.header__left-logo {
+  gap: 10px;
+  margin-left: 40px;
+}
+
+.header__left-logo .header__logo-text {
+  font-size: 22px;
+}
+
+.header__right .header__activebar {
+  display: flex;
+  align-items: center;
+  width: 101px;
+  height: 48px;
+  background-color: #EAF1FB;
+  border-radius: 22px;
+  justify-content: center;
+  gap: 5px;
+  margin-top: 6px;
+}
+
+.header__searchbar {
+  width: 40%;
+  height: 45px;
+  border-radius: 20px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  padding: 0 15px;
+  background-color: #EAF1FB;
+  margin-top: 6px;
+}
+
+.header__searchbar input {
+  border: 0;
+  outline: none;
+  width: 100%;
+  background-color: #EAF1FB;
+  font-size: 16px;
+}
+
+.header__account {
+  width: 134px;
+  height: 48px;
+  border: 1px solid #dfdfe2;
+  border-radius: 7px;
+  margin-top: 6px;
+}
+
+.header__account .header__account-name {
+  background: #ad41c1;
+  width: 30px;
+  height: 30px;
+  border-radius: 50%;
+  text-align: center;
+  color: white;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  margin: 10px;
+}
+
+.header__right {
+  padding-right: 26px;
+  gap: 20px;
+}
+
+.header__menubuttons {
+  display: flex;
+  gap: 20px;
+  margin-top: 6px;
+}
+
+.main {
+  display: flex;
+}
+
+.main__leftbar {
+  width: 60px;
+  height: 100vw;
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  gap: 20px;
+  background-color: #EAF1FB;
+}
+
+.main__leftbar .main__leftbar-mail {
+  margin-top: 2vw;
+}
+
+.main__leftbar div {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  font-size: 13px;
+}
+
+.main__sidebar {
+  width: 19%;
+}
+
+.main__sidebar-item {
+  margin-top: 2.3vw;
+}
+
+
+.main__sidebar-item_inbox-text span {
+  margin-left: 11vw;
+}
+
+.main__sidebar .main__sidebar-compose {
+  padding: 13px;
+  background-color: #C2E7FF;
+  border-radius: 9px;
+}
+
+.main__sidebar-item_inbox,
+.main__sidebar-item5-draft {
+  display: flex;
+  justify-content: space-between;
+  width: 74%;
+}
+
+.main__sidebar-compose {
+  width: 137px;
+  display: flex;
+  align-items: center;
+  gap: 10px;
+}
+
+.inbox,
+.stared,
+.snooz,
+.sent,
+.draft,
+.more {
+  display: flex;
+  align-items: center;
+  margin-bottom: 10px;
+}
+
+.inbox {
+  background-color: #d3e3fd;
+  width: 95%;
+  height: 30px;
+  border-radius: 13px;
+}
+
+.main__sidebar-item img {
+  display: Inline-block;
+  margin: 0 12px;
+}
+
+.main__sidebar-label {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 5px 13px;
+  margin-top: 6vh;
+  width: 86%;
+}
+
+.main_menubar {
+  display: flex;
+  justify-content: space-between;
+  width: 73vw;
+  background-color: #fff;
+  height: 50px;
+  align-items: center;
+  border-top-left-radius: 12px;
+  border-top-right-radius: 12px;
+  margin-top: 6px;
+}
+
+.main_menubar-item1,
+.main_menubar-item2 {
+  display: flex;
+  align-items: center;
+  gap: 10px;
+  margin-left: 12px;
+}
+
+.main_menubar-item2 div {
+  padding: 0 5px;
+}
+
+.main__rightbar {
+  width: 40px;
+  position: absolute;
+  right: 0;
+  margin-top: 11px;
+}
+
+.main__rightbar-icons {
+  display: flex;
+  flex-direction: column;
+  gap: 5px;
+  align-items: center;
+}
+
+.main__rightbar-icons div {
+  margin: 10px 0;
+}
+
+.main_messagebox-row{
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  font-size: 14px;
+  padding:10px;
+}
+
+.main_messagebox-rowItem1{
+  display: flex;
+  align-items: center;
+  gap:12px;
+}
+
+.highlight{
+  font-weight:bolder;
+}
+
+
