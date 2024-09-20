@@ -15,7 +15,7 @@ body {
 }
 
 .header__left-menuicon {
-  width: 63px;
+  width: 68px;
   background-color: #EAF1FB;
   display: flex;
   align-items: center;
@@ -34,7 +34,7 @@ body {
 
 .header__left-logo {
   gap: 10px;
-  margin-left: 40px;
+  margin-left: 26px;
 }
 
 .header__left-logo .header__logo-text {
@@ -112,8 +112,8 @@ body {
 }
 
 .main__leftbar {
-  width: 60px;
-  height: 100vw;
+  width: 69px;
+  height: 717px;
   display: flex;
   flex-direction: column;
   align-items: center;
@@ -126,6 +126,32 @@ body {
   width: 60px;
 }
 
+.main__leftbar-mail-border{
+  width:40px;
+  height:25px;
+  background-color: #d1e4fb;
+  border-radius: 10px;
+  position:relative;
+}
+
+.main__leftbar-mail-border img{
+  display: inline-block;
+  margin-top: 3px;
+}
+
+.main__leftbar-mail-border span{
+  width:14px;
+  height:14px;
+  background-color:#b8281f;
+  color:white;
+  border-radius: 50%;
+  font-size: 13px;
+  position: absolute;
+  left: 27px;
+  top: -7px;
+  text-align: center;
+}
+
 .main__leftbar div {
   display: flex;
   flex-direction: column;
@@ -135,10 +161,13 @@ body {
 
 .main__sidebar {
   width: 258px;
+  margin-left: 10px;
+  margin-top: 14px;
 }
 
 .main__sidebar-item {
-  margin-top: 24px;
+  margin-top: 14px;
+  
 }
 
 
@@ -147,9 +176,13 @@ body {
 }
 
 .main__sidebar .main__sidebar-compose {
-  padding: 13px;
+  
   background-color: #C2E7FF;
-  border-radius: 9px;
+  border-radius: 17px;
+  width: 138px;
+  height: 56px;
+  display: flex;
+  justify-content: center;
 }
 
 .main__sidebar-item_inbox,
@@ -254,7 +287,9 @@ opacity:0.5;
 }
 
 .main_messagebox{
-background-color:white;
+  background-color:white;
+  overflow-y: scroll;
+  height: 646px;
 }
 
 .main_messagebox-row{
@@ -263,6 +298,7 @@ background-color:white;
   font-size: 14px;
   padding:10px;
   border-bottom: 1px solid #eeeeee;
+  background-color:#f2f5fc;
 }
 
 .main_messagebox-row .main_messagebox-rowItem1 input[type="checkbox"] {
@@ -296,6 +332,10 @@ background-color:white;
   height: 7px;
   width: 14px;
   border-bottom: 1px solid #ccc;
+}
+
+.white-pen{
+ color:white;
 }
 
 @media (max-width:960px)
