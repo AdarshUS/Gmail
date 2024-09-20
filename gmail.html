@@ -5,6 +5,7 @@
       gmail
     </title>
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.6.0/css/all.min.css" integrity="sha512-Kc323vGBEqzTmouAECnVceyQqyqdsSiqLQISBL29aUW4U/M7pSPA/gEUZQqv1cwx4OnYxTxve5UMg5GT6L4JJg==" crossorigin="anonymous" referrerpolicy="no-referrer" />
   </head>
   <body>
     <div class="header">
@@ -75,7 +76,7 @@
          <div class="main__sidebar-item1 inbox">
            <img src="Assets/images/inbox.png" alt="inbox">
            <div class="main__sidebar-item_inbox">
-             <div class="main__sidebar-item_inbox-text">Inbox</div>             
+             <div class="main__sidebar-item_inbox-text highlight">Inbox</div>             
              <div>23</div>
            </div>           
          </div>
@@ -94,7 +95,7 @@
          <div class="main__sidebar-item5 draft">
            <img src="Assets/images/draft.png" alt="drafts" width=20>
            <div class="main__sidebar-item5-draft">
-             <div class="main__sidebar-item5-draft-text">Drafts</div>
+             <div class="main__sidebar-item5-draft-text highlight">Drafts</div>
              <div class="main__sidebar-item5-draft-no">4</div>
            </div>           
          </div>
@@ -111,9 +112,9 @@
      <div class="main__messageBoxContainer">
        <div class="main_menubar">
          <div class="main_menubar-item1">
-           <div>
-             <input type="checkbox">
-             <img src="Assets/images/down-arrow.png" alt="" width=13>
+           <div class="main_menubar-item1box">          
+             <input type="checkbox">          
+             <img src="Assets/images/Down.png" alt="" width=8>
            </div>
            <div>
              <img src="Assets/images/refresh.png" alt="" width=13>
@@ -123,20 +124,20 @@
            </div>            
          </div>
           <div class="main_menubar-item2">
-            <div>1-46 of 46</div>
-            <div><img src="Assets/images/left-arrow.png" alt="leftarrow" width=12></div>
-            <div><img src="Assets/images/right-arrow.png" alt="rightarrow" width=12></div>
+            <div class="main_menubar-item2Text">1-46 of 46</div>
+            <div class="main_menubar-item2Image"><img src="Assets/images/left-arrow.png" alt="leftarrow" width=10></div>
+            <div class="main_menubar-item2Image"><img src="Assets/images/right-arrow.png" alt="rightarrow" width=10></div>
           </div>    
        </div>
        <div class="main_messagebox">
-         <div class="main_messagebox-row">
+         <div class="main_messagebox-row unread-msg">
            <div class="main_messagebox-rowItem1"> 
              <div><input type="checkbox"></div>
              <div><img src="Assets/images/star.png"></div>
-             <div>Techversant infotec</div>
+             <div><b>Techversant infotec</b></div>
            </div>
            <div class="main_messagebox-rowItem2">
-             <div>Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
+              <div>Daily Email Digest-Daily Digest Wednesday,18 Sep Hello,Adarsh US On leave today (4) View all RN Rini Nelson LN 19 Aug,2024...</div>
            </div>            
            <div class="main_messagebox-rowItem3">
                9:28 AM
@@ -155,7 +156,7 @@
                9:28 AM
            </div>
          </div>
-          <div class="main_messagebox-row">
+          <div class="main_messagebox-row unread-msg">
            <div class="main_messagebox-rowItem1"> 
              <div><input type="checkbox"></div>
              <div><img src="Assets/images/star.png"></div>
@@ -168,7 +169,7 @@
                9:28 AM
            </div>
          </div>
-          <div class="main_messagebox-row">
+          <div class="main_messagebox-row unread-msg">
            <div class="main_messagebox-rowItem1"> 
              <div><input type="checkbox"></div>
              <div><img src="Assets/images/star.png"></div>
