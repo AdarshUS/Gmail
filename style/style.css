@@ -236,8 +236,7 @@ body {
 }
 
 .inbox {
-  background-color: #d3e3fd;
-  
+  background-color: #d3e3fd;  
 }
 
 .main__sidebar-item img {
@@ -315,6 +314,11 @@ opacity:0.5;
   height: 646px;
 }
 
+.main_messagebox-time{
+  padding-left:30px;
+  width: 89px;
+}
+
 .main_messagebox-row{
   display: flex;  
   align-items: center;
@@ -356,6 +360,13 @@ opacity:0.5;
   padding-right: 60px;
 }
 
+.main_messageboxText{
+  overflow: hidden;
+   white-space: nowrap;
+   text-overflow: ellipsis;
+    width: 50vw;
+}
+
 .main_messagebox-rowItem1 div img{
   opacity:0.5;
 }
@@ -386,12 +397,22 @@ opacity:0.5;
  color:white;
 }
 
+.mobile-container{
+  display:none;
+}
+
+@media (max-width:1310)
+{
+
+}
+
 @media (max-width:960px)
 {
  .header__right .header__activebar{
    width:50px;
    height:50px;
    border-radius:50%;
+   margin: 0 40px;
 }
  .header__activebar-text{
   display:none;
@@ -403,10 +424,187 @@ opacity:0.5;
  .header__searchbar input,.search-option{
    display:none;
  }
+
  .header__searchbar{
  width:auto;
  margin-left: 228px;
  background: none;
+ }
+}
+
+@media (max-width:640px)
+{
+
+html, body {
+  position: relative;
+  margin: 0;
+  border: 0;
+  padding: 0;
+  width: 100%;
+  height: 100%;
+  overflow: hidden;
+}
+body {
+  overflow: auto;
+}
+
+ body{
+  background-color:#fdf8f6;
+  
+}
+
+.header,.main{
+display:none;
+}
+ .mobile-container{
+  display:block;
+}
+ .Gmailapp_Notify{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    gap: 5px;
+    Background-color:#f1f4fb;
+    height: 76px;
+    padding: 0 12px;
+}
+
+.Gmailapp_Notify-logo{
+  background-color:white;
+  width: 40px;
+  height: 40px;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  border-radius: 5px;
+}
+.Gmailapp_NotifyItem1{
+  display:flex;
+  gap: 12px;
+}
+
+.Gmailapp_NotifyItem2{
+  color: #3b5694;
+  font-size: 13px;
+}
+
+.Gmailapp_Notify-text1{
+  font-size: 14px;
+  font-weight: bold;
+  padding-bottom: 5px;
+}
+
+.inbox-text{
+ padding-right:5px;
+ font-size: 18px;    
+}
+
+.Gmailapp_Notify-logo .red-dot{
+    position: absolute;
+    width: 10px;
+    height: 10px;
+    border-radius: 50%;
+    background-color: red;
+    top: 12px;    
+    left: 45px;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #f1f1f1;
+    height: 45px;
+    border-bottom: 1px solid #d8d8d8;
+    border-top: 1px solid #d8d8d8;
+}
+
+.header_mainmenu{
+  padding:8px;
+}
+
+.Nine-text{
+  opacity:0.5;
+}
+.pen-container{
+    background-color: #b8281f;
+    width: 33px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    height: 26px;
+    margin-right: 9px;
+    border-radius: 3px;
+}
+
+.Gmailapp_Notify-text2{
+  font-size: 13px;
+}
+
+.pen-container .pen{
+    color: white;
+}
+
+.searchbarContainer{
+    display: flex;
+    align-items: center;
+    background-color: #fdf8f6;
+    height: 41px;
+    border-bottom:1px solid #ececec;
+}
+
+.searchbarContainer-searchbar{
+  display:flex;
+}
+
+.searchbarContainer-searchbar img{
+  display: inline-block;
+  margin: 10px;
+}
+.searchbarContainer-searchbar input::placeholder{
+  font-size:17px;
+}
+
+.searchbarContainer input{
+    border:0;
+    outline: none;
+    background-color: #fdf8f6;
+}
+
+.message_box-row{
+  display: flex;
+  align-items: center;
+  border-bottom: 1px solid #ececec;
+}
+
+.message_box-textItem1{
+    display: flex;
+    justify-content: space-between;
+}
+
+.message_box-textItem3 p,.message_box-textItem2 p{
+ font-size:14px;
+ color:#a7a7a7;
+}
+
+.message_box-textItem1Time{
+ font-size:13px;
+color:#a7a7a7;
+}
+
+.message_box-textItem3{
+  display:flex;
+}
+
+.message_box-textItem3 p{
+  overflow: hidden;
+  text-overflow: ellipsis;
+  white-space: nowrap;
+  width: 519px;
+}
+
+.message_box-text{
+  padding:7px;
 }
 }
 
