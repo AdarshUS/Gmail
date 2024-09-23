@@ -22,7 +22,20 @@ body {
   align-items: center;
   justify-content: center;
   height: 55px;
-  padding: 18px;
+  padding: 10.3px;
+}
+
+.header__left-menuiconContainer{  
+  width:39px;
+  height:39px;
+  border-radius:50%;
+  display:flex;
+  align-items: center;
+  justify-content: center;  
+}
+
+.header__left-menuiconContainer:hover{
+  background-color:#d8d8d8;
 }
 
 .header__left,
@@ -140,10 +153,10 @@ body {
 }
 
 .main__leftbar-message-border:hover,.main__leftbar-gmeet-border:hover{
-  background-color: #969696;
+  background-color: #d8d8d8;
 }
 
-.main__leftbar-mail-border img{
+.main__leftbar-mail-border img,.main__leftbar-message-border img,.main__leftbar-gmeet-border img{
   display: inline-block;
   margin-top: 3px;
 }
