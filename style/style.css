@@ -7,6 +7,7 @@
 body {
   font-family: arial;
   background-color: #f7f8fc;
+  overflow: hidden;
 }
 
 .header,
@@ -15,12 +16,13 @@ body {
 }
 
 .header__left-menuicon {
-  width: 68px;
+  
   background-color: #EAF1FB;
   display: flex;
   align-items: center;
   justify-content: center;
   height: 55px;
+  padding: 18px;
 }
 
 .header__left,
@@ -63,7 +65,7 @@ body {
   padding: 0 15px;
   background-color: #EAF1FB;
   margin-top: 6px;
-  margin-left: 114px;
+  margin-left: 129px;
 }
 
 .header__searchbar input {
@@ -112,7 +114,7 @@ body {
 }
 
 .main__leftbar {
-  width: 69px;
+  
   height: 717px;
   display: flex;
   flex-direction: column;
@@ -126,12 +128,19 @@ body {
   width: 60px;
 }
 
-.main__leftbar-mail-border{
+.main__leftbar-mail-border,.main__leftbar-message-border,.main__leftbar-gmeet-border{
   width:40px;
-  height:25px;
+  height:25px; 
+  border-radius: 10px; 
+}
+
+.main__leftbar-mail-border{
   background-color: #d1e4fb;
-  border-radius: 10px;
   position:relative;
+}
+
+.main__leftbar-message-border:hover,.main__leftbar-gmeet-border:hover{
+  background-color: #969696;
 }
 
 .main__leftbar-mail-border img{
@@ -185,6 +194,10 @@ body {
   justify-content: center;
 }
 
+.main__sidebar .main__sidebar-compose:hover{
+  box-shadow: rgba(50, 50, 93, 0.25) 0px 13px 27px -5px, rgba(0, 0, 0, 0.3) 0px 8px 16px -8px;
+}
+
 .main__sidebar-item_inbox,
 .main__sidebar-item5-draft {
   display: flex;
@@ -208,13 +221,23 @@ body {
   display: flex;
   align-items: center;
   margin-bottom: 10px;
+  width: 240px;
+  height: 30px;
+  border-radius: 13px;
+}
+
+
+.stared:hover,
+.snooz:hover,
+.sent:hover,
+.draft:hover,
+.more:hover{
+  background-color: #969696;
 }
 
 .inbox {
   background-color: #d3e3fd;
-  width: 240px;
-  height: 30px;
-  border-radius: 13px;
+  
 }
 
 .main__sidebar-item img {
@@ -301,6 +324,27 @@ opacity:0.5;
   background-color:#f2f5fc;
 }
 
+.main_messagebox-row:hover{
+ box-shadow: 
+
+ inset 1px 0 0 #dadce0,
+ inset -1px 0 0 #dadce0,
+ 0 1px 2px 0 rgba(60, 64, 67, .3),
+ 0 3px 6px 2px rgba(60, 64, 67, .3); 
+
+}
+
+.main_messagebox-row:hover  .main_messagebox_hoverItem{
+  width: 80px;
+ display: flex;
+ align-items: center;
+ justify-content: space-between;
+}
+
+.main_messagebox-row:hover .main_messagebox-time{
+  display: none;
+}
+
 .main_messagebox-row .main_messagebox-rowItem1 input[type="checkbox"] {
   border:1px solid #d5d8df;
 }
@@ -314,6 +358,10 @@ opacity:0.5;
 
 .main_messagebox-rowItem1 div img{
   opacity:0.5;
+}
+
+.main_messagebox_hoverItem{
+  display: none;
 }
 
 .main_messagebox-rowItem3{
